@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model PeopleViewModel
+
+@if(Model.Message != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @Model.Message
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="row">
+    <div class="col-md-12">
+        <a href="/home/add" class="btn btn-success w-25">Add People</a>
+        <table class="table table-hover table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var person in Model.People)
+                {
+                    <tr>
+                        <td>@person.FirstName</td>
+                        <td>@person.LastName</td>
+                        <td>@person.Age</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
