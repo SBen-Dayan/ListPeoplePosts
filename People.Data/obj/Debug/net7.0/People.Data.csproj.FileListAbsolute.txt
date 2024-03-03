@@ -1,0 +1,12 @@
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\bin\Debug\net7.0\People.Data.deps.json
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\bin\Debug\net7.0\People.Data.dll
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\bin\Debug\net7.0\People.Data.pdb
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.csproj.AssemblyReference.cache
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.AssemblyInfoInputs.cache
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.AssemblyInfo.cs
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.csproj.CoreCompileInputs.cache
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.dll
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\refint\People.Data.dll
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\People.Data.pdb
+C:\Users\shani\source\repos\MultipleElementsAndStuff\People.Data\obj\Debug\net7.0\ref\People.Data.dll

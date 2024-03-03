@@ -38,13 +38,7 @@ namespace People.Data
             using var connection = new SqlConnection(_connectionString);
             using var cmd = connection.CreateCommand();
             cmd.CommandText = BuildCommandText(people);
-            for(int i = 0; i < people.Count; i++)
-            {
-                var current = people[i];
-                cmd.Parameters.AddWithValue($"@firstName{i}", current.FirstName);
-                cmd.Parameters.AddWithValue($"@lastName{i}", current.LastName);
-                cmd.Parameters.AddWithValue($"@age{i}", current.Age);
-            }
+            AddParameters(people, cmd);
             connection.Open();
             cmd.ExecuteNonQuery();
         }
@@ -52,15 +46,26 @@ namespace People.Data
         private static string BuildCommandText(List<Person> people)
         {
             string sql = "INSERT INTO People Values ";
-            for(var i = 0; i < people.Count; i++)
+            for (var i = 0; i < people.Count; i++)
             {
                 sql += $"(@firstName{i}, @lastName{i}, @age{i})";
-                if(i < people.Count - 1)
+                if (i < people.Count - 1)
                 {
                     sql += ", ";
                 }
             }
             return sql;
+        }
+
+        private static void AddParameters(List<Person> people, SqlCommand cmd)
+        {
+            for (int i = 0; i < people.Count; i++)
+            {
+                var current = people[i];
+                cmd.Parameters.AddWithValue($"@firstName{i}", current.FirstName);
+                cmd.Parameters.AddWithValue($"@lastName{i}", current.LastName);
+                cmd.Parameters.AddWithValue($"@age{i}", current.Age);
+            }
         }
     }
 }
